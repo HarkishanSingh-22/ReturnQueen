@@ -1,3 +1,4 @@
+@import "tailwindcss";
 * {
   padding: 0;
   margin: 0;
@@ -27,6 +28,8 @@
   color: white !important;
   font-size: 18px !important;
   font-weight: 500;
+    opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .shopper-link {
@@ -461,4 +464,28 @@
   background-color: #8755de !important;
   padding: 8px 12px;
   border-radius: 26px;
+}
+
+.nav-link {
+  color: red !important;
+  font-size: 18px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+.navbar-nav {
+  display: flex !important;
+}
+
+
+.sell-hero{
+  margin-top: 116px !important;
+  background-color: #FCF8FF;
+}
+.sell-hero h1{
+  font-size: 3.3rem !important;
+}
+.sale-hero-img{
+  max-height: 300px !important;
 }

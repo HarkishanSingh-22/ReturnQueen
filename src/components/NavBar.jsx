@@ -67,8 +67,8 @@ function NavBar() {
                   </Link>
                 </li>
 
-                <div className="btn download-btn">Download App</div>
               </ul>
+                <div className="btn download-btn">Download App</div>
             </div>
           </div>
         </nav>
