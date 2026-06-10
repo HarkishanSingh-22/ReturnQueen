@@ -1,4 +1,4 @@
-@import "tailwindcss";
+
 * {
   padding: 0;
   margin: 0;
@@ -28,7 +28,7 @@
   color: white !important;
   font-size: 18px !important;
   font-weight: 500;
-    opacity: 1 !important;
+  opacity: 1 !important;
   visibility: visible !important;
 }
 
@@ -479,13 +479,15 @@
 }
 
 
-.sell-hero{
+.sell-hero {
   margin-top: 116px !important;
   background-color: #FCF8FF;
 }
-.sell-hero h1{
+
+.sell-hero h1 {
   font-size: 3.3rem !important;
 }
-.sale-hero-img{
+
+.sale-hero-img {
   max-height: 300px !important;
 }
