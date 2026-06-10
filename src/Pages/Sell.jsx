@@ -8,11 +8,15 @@ import ListImg1 from "../assets/list-img1.png";
 import ListImg2 from "../assets/list-img-2.png";
 import ListImg3 from "../assets/list-img3.png";
 
+import PoshmarkBanner from "../assets/poshmark-banner.webp";
+
+import GoogleIcon from "../assets/google-icon.png";
+import AppleIcon from "../assets/apple-icon.png";
+
 function SellPage() {
   return (
     <>
       <section className="sell-hero w-100 px-4 ">
-  
         <div className=" grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 py-5">
           <div className="sell-left ">
             <div className=" flex items-center border  rounded-full gap-2 px-3 py-2">
@@ -242,11 +246,199 @@ function SellPage() {
       </section>
 
       <section className="asked-question-div container">
-        <p className="text-5xl text-black font-bold text-center">
+        <p className="text-5xl text-black font-bold text-center mb-5">
           Frequently asked questions
         </p>
 
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                What kind of items can I sell through ReturnQueen on Poshmark?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                You can sell a wide range of items on Poshmark, including
+                clothing, shoes, accessories, and more. Whether they’re past the
+                return window or just things you’re ready to part with, you can
+                quickly list them for sale right in the app and reach Poshmark’s
+                huge community of shoppers.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                How do I list on Poshmark in just a few taps?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Listing on Poshmark through ReturnQueen is super simple, just a
+                few taps and you’re good to go: <br />
+                1️⃣ In the ReturnQueen app, connect your shopping accounts so
+                your purchases sync automatically. <br />
+                2️⃣ Find the item you want to sell and tap the “Sell” button.{" "}
+                <br />
+                3️⃣ You’ll be redirected to the Poshmark app, where you can add a
+                few details like item condition, price, and any extra notes.{" "}
+                <br />
+                4️⃣ If you don’t have a Poshmark account, you can create one
+                right there. And that’s it! Your listing will be live on
+                Poshmark in minutes.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Do I need to take new photos or write descriptions?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Yes, you can! Once you’ve sold your item on Poshmark,
+                ReturnQueen can handle the pickup for you—right from your
+                doorstep. Just schedule your pickup in the ReturnQueen app, and
+                one of our drivers will take care of it. It’s a convenient way
+                to handle your sales without any extra hassle.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                What are the fees for this service?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                There are no added fees to list your items on Poshmark through
+                ReturnQueen.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mb-5">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed tracking-wide"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                Can I edit the listing after it's created on Poshmark?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body">
+                Yes! You can edit the listing right in the Poshmark app.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      {/* Posmark-Banner */}
+      <section className="posmark-banner-section container-fluid p-3 p-md-4">
+        <div className="posmark-banner rounded-5 p-3 p-md-5">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+            {/* Left Content */}
+            <div className="banner-left-content">
+              <div className="flex flex-col sm:flex-row gap-4 items-center sm:items-start">
+                <img
+                  className="qr-img w-32 sm:w-40 object-contain shrink-0"
+                  src={Qr}
+                  alt=""
+                />
+
+                <div className="text-center sm:text-start">
+                  <p className="text-2xl md:text-3xl font-bold text-white">
+                    Ready to turn <br />
+                    clutter into <span className="italic">cash?</span>
+                  </p>
+
+                  <p className="text-sm text-white fw-semibold tracking-wide mt-3">
+                    Click “sell” on unwanted purchase item to create your first
+                    Poshmark listing!
+                  </p>
+
+                  <div className="flex justify-center sm:justify-start items-center gap-3 mt-4">
+                    <img
+                      src={AppleIcon}
+                      className="h-10 md:h-12 object-contain"
+                      alt=""
+                    />
+                    <img
+                      src={GoogleIcon}
+                      className="h-10 md:h-12 object-contain"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div className="flex justify-center lg:justify-end">
+              <img
+                src={PoshmarkBanner}
+                alt=""
+                className="w-full max-w-md lg:max-w-lg h-65 object-contain "
+              />
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

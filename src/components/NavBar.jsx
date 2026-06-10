@@ -1,24 +1,35 @@
 import "../App.css";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import QueenLogo from "../assets/queen-logo.png";
 
 function NavBar() {
   return (
     <>
       <div className="fixed-top bg-light">
-        <div className="upper-nav container-fluid p-0">
-          <div className="upper-nav-div container-fluid d-flex gap-3 py-1">
-            <li className="nav-item">
-              <Link className="shopper-link active" to="/">
-                For shoppers
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link className="businesses-link active" to="/Businesses">
-                For businesses
-              </Link>
-            </li>
-          </div>
+        <div className="upper-nav-div container-fluid d-flex gap-3 py-1">
+          <li className="nav-item">
+            <NavLink
+              to="/"
+              end
+              className={({ isActive }) =>
+                isActive ? "shopper-link active" : "shopper-link"
+              }
+            >
+              For shoppers
+            </NavLink>
+          </li>
+
+          <li className="nav-item">
+            <NavLink
+              to="/Businesses"
+              className={({ isActive }) =>
+                isActive ? "businesses-link active" : "businesses-link"
+              }
+            >
+              For businesses
+            </NavLink>
+          </li>
         </div>
 
         <nav className="navbar navbar-expand-lg  ">
@@ -66,9 +77,8 @@ function NavBar() {
                     Blog
                   </Link>
                 </li>
-
               </ul>
-                <div className="btn download-btn">Download App</div>
+              <div className="btn download-btn">Download App</div>
             </div>
           </div>
         </nav>

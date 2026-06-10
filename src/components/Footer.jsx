@@ -48,7 +48,7 @@ function Footer() {
               faQ
             </Link>
             <Link className="text-muted foot-links" to="/Mail">
-                <p className="m-0 d-flex align-items-center gap-1 foot-links">  <span><i class="bi bi-envelope-at-fill fs-5 text-danger"></i></span>  support@returnqueen.com</p>
+                <p className="m-0 d-flex align-items-center gap-1 foot-links">  <span><i class="bi bi-envelope-at-fill fs-5 text-purple-700"></i></span>  support@returnqueen.com</p>
             </Link>
           </div>
         </div>
