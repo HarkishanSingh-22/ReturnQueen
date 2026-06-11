@@ -493,22 +493,8 @@ function Hero() {
                 Scan to download the <br /> ReturnQueen App
               </p>
             </div>
-            {/* <div className="d-flex gap-3  mt-3">
-            <div className="logo-box d-flex align-items-center gap-2 mt-2">
-              <img className="apple-logo" src={appleLogo} alt="" />
-              <div className="">
-                <p className="m-0 logo-text">4.4/5 App Store</p>
-                <img className="rating-logo" src={ratingLogo} alt="" />
-              </div>
-            </div>
-            <div className="logo-box d-flex align-items-center gap-2 mt-2">
-              <img className="apple-logo" src={playLogo} alt="" />
-              <div className="">
-                <p className="m-0 logo-text">4.4/5 App Store</p>
-                <img className="rating-logo" src={ratingLogo} alt="" />
-              </div>
-            </div>
-          </div> */}
+            
+        
           </div>
         </div>
       </section>
